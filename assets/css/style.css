@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FA7268;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#cover > img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#cover > h3 {
+    padding-left: 10px;
+    letter-spacing: 16px;
+    color: #882820;
+    font-size: 18px;
+}
