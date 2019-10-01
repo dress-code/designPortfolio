@@ -15,14 +15,22 @@
     z-index: 2;
 }
 
-#cover > img {
-    width: 300px;
-    margin: 0 auto;
-}
-
 #cover > h3 {
-    padding-left: 10px;
+    text-align: center;
     letter-spacing: 16px;
+    padding-left: 10px;
     color: #882820;
     font-size: 18px;
+}
+
+#name {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#name > h1 {
+    font-size: 70px;
+    font-weight: normal;
+    color: #FFFFFF;
 }
