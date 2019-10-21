@@ -11,12 +11,9 @@ window.onload = () => {
         }, 6500);
     }
 
-    var scrollableElement = $('content');
+    /*var scrollableElement = $('content');
 
-    scrollableElement.addEventListener('wheel', findScrollDirectionOtherBrowsers);
-
-    const SECTIONS = $$("section");
-    console.log(SECTIONS);
+    scrollableElement.addEventListener('wheel', findScrollDirectionOtherBrowsers);*/
 
 };
 
@@ -29,9 +26,13 @@ function displayHidden(){
             hiddenItems[i].classList.add("fade-in");
         }
     }
+    let currentSection = $$("current")[0];
+    currentSection.style.display = "block";
+    currentSection.style.opacity = 0;
+    currentSection.classList.add("fade-in");
 }
 
-function findScrollDirectionOtherBrowsers(event){
+/*function findScrollDirectionOtherBrowsers(event){
     var delta;
 
     if (event.wheelDelta){
@@ -44,20 +45,25 @@ function findScrollDirectionOtherBrowsers(event){
         console.log("DOWN");
     }else if (delta > 0){
         console.log("UP");
-        changeSection(true);
+        let current = $$("current")[0];
+        current.classList.remove("current");
+        console.log(current.id);
+        let index = parseInt(current.id) + 1;
+        console.log(index);
+        changeSection(index);
     }
 
-}
+}*/
 
-function changeSection(up){
-    if(up){
-        currentIndex = $$("current")[0].id;
-        console.log(currentIndex);
-        currentIndex++;
-        console.log(currentIndex);
-    }else{
-
-    }
+function changeSection(newSectionIndex){
+        console.log("fired function");
+        let newSection = $(newSectionIndex);
+        let oldSection = $$("current")[0];
+        oldSection.classList.remove("current")
+        oldSection.classList.add("hidden");
+        newSection.classList.remove("hidden");
+        newSection.classList.add("current");
+        newSection.classList.add('fade-in');
 }
 
 /* Shortcuts */

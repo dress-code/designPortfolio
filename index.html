@@ -27,19 +27,18 @@
             <img src="./assets/images/block-logo.svg" alt="Anna Jacobsen's logo is two N's, one forward and one backward, forming an X." />
             <nav>
                 <ul>
-                    <li class="selected">About</li>
-                    <li>Experience</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    <li>Resumé</li>
+                    <li class="selected" onClick="changeSection(0)">About</li>
+                    <li onClick="changeSection(1)">Experience</li>
+                    <li onClick="changeSection(2)">Projects</li>
+                    <li onClick="changeSection(3)">Contact</li>
+                    <li onClick="changeSection(4)">Resumé</li>
                 </ul>
             </nav>
         </div>
 
     
-        <div id="0" class="current section">
+        <div id="0" class="current section hidden">
             <h1>Chai, pie, and HCI.</h1>
-            
             <p>
                 My name is Anna, and those are three things I love.
                 As a senior at RIT with a major in <span class="highlight">Web & Mobile Computing,</span> a minor in <span class="highlight">anthropology,</span>
@@ -62,7 +61,7 @@
         </div>
 
         <div id="4" class="section hidden">
-            <h1>Resume</h1>
+            <h1>Resumé</h1>
         </div>
 
     </div>

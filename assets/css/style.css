@@ -6,6 +6,7 @@
 
 body {
     background-color: #FBFBFB;
+    overflow: hidden;
 }
 
 #cover {
@@ -103,6 +104,7 @@ p {
 
 h1 {
     color: #FA7268;
+    letter-spacing: 1px;
 }
 
 /* Sections */
@@ -121,4 +123,8 @@ h1 {
     font-weight: bold;
     letter-spacing: .5px;
     color: #FA7268;
+}
+
+.current {
+    display: block;
 }
