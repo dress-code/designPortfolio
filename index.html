@@ -7,17 +7,64 @@
     <link rel="stylesheet" href="./assets/css/animations.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/images/icon.png">
+    <script src="./assets/js/functions.js"></script>
   </head>
   <body>
-
-    <div id="cover">
-        <!--<img src="./assets/images/logo_uncrossed.svg" alt="Anna Jacobsen" class="hidden"/>-->
-        <div id="name">
-            <h1 class="slide-right">AN</h1>
-            <h1 class="slide-left">AN</h1>
+    <div id="cover" class="fade-out">
+        <div id="branding">
+            <h1 class="fade-in delay">U</h1>
+            <div id="name">
+                <h1 class="slide-right"><span class="fade-pink">A</span>N</h1>
+                <h1 class="slide-left"><span class="fade-pink">A</span>N</h1>
+            </div>
+            <h3 class="condense">JACOBSEN</h3>
         </div>
-        
-        <h3 class="hidden">JACOBSEN</h3>
+    </div>
+
+    <div id="content">
+
+        <div class="hidden sidebar">
+            <img src="./assets/images/block-logo.svg" alt="Anna Jacobsen's logo is two N's, one forward and one backward, forming an X." />
+            <nav>
+                <ul>
+                    <li class="selected">About</li>
+                    <li>Experience</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                    <li>Resumé</li>
+                </ul>
+            </nav>
+        </div>
+
+    
+        <div id="0" class="current section">
+            <h1>Chai, pie, and HCI.</h1>
+            
+            <p>
+                My name is Anna, and those are three things I love.
+                As a senior at RIT with a major in <span class="highlight">Web & Mobile Computing,</span> a minor in <span class="highlight">anthropology,</span>
+                and a concentration in <span class="highlight">design,</span> I am hoping to converge my skills at the intersection of people and technology (HCI).
+                In my spare time, you can find me at the boathouse practicing for <span class="highlight">crew</span>, in a kitchen <span class="highlight">baking</span> a delicious treat, or sipping a chai latte while <span class="highlight">sketching</span> at New City Cafe in Rochester.
+                A witty sense humor is always appreciated from friends and co-workers while I code.
+            </p>
+        </div>
+
+        <div id="1" class="section hidden">
+            <h1>Experience</h1>
+        </div>
+
+        <div id="2" class="section hidden">
+            <h1>Projects</h1>
+        </div>
+
+        <div id="3" class="section hidden">
+            <h1>Contact</h1>
+        </div>
+
+        <div id="4" class="section hidden">
+            <h1>Resume</h1>
+        </div>
+
     </div>
   
   </body>
