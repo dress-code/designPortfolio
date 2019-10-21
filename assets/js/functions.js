@@ -27,7 +27,7 @@ function displayHidden(){
         }
     }
     let currentSection = $$("current")[0];
-    currentSection.style.display = "block";
+    currentSection.classList.remove("hidden");
     currentSection.style.opacity = 0;
     currentSection.classList.add("fade-in");
 }

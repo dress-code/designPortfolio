@@ -73,8 +73,8 @@
               transform: translateX(0) scaleX(-1);
     }
     100% {
-      -webkit-transform: translateX(-25.5px);
-              transform: translateX(-25.5px) scaleX(-1);
+      -webkit-transform: translateX(-27.5px);
+              transform: translateX(-27.5px) scaleX(-1);
     }
   }
 
@@ -84,8 +84,8 @@
               transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-25.5px);
-              transform: translateX(-25.5px);
+      -webkit-transform: translateX(-27.5px);
+              transform: translateX(-27.5px);
     }
   }
 
@@ -99,7 +99,7 @@
          color: #F7958E; }
   }
 
-  @keyframes fade-in {
+ @keyframes fade-in {
       from {opacity: 0;}
       to {opacity: 1;}
   }
